@@ -1,0 +1,11 @@
+services:
+  myBackend:
+    build: .
+    container_name: myBackend
+    ports:
+      - 8080:8080
+    networks:
+      - spring-network
+networks:
+  spring-network:
+    driver: bridge
